@@ -1,0 +1,7 @@
+CREATE TABLE files (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    filename TEXT NOT NULL,
+    content_type TEXT NOT NULL,
+    data BLOB NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
