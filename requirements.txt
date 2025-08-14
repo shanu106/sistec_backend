@@ -6,3 +6,4 @@ pollinations
 aiosqlite
 storage3
 supabase
+python-multipart
