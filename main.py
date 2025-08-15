@@ -238,7 +238,7 @@ def upload_ppt_to_supabase(filename: str, data: bytes) -> str:
     
 @app.post("/generate_ppt")
 async def generate_ppt_api(topic: str = Form(...)):
-    print("function started :")
+    print("function started :",topic)
     style = extract_style_from_prompt(topic)
     print("style got")
     slides_data = get_slides_from_gemini(topic)
